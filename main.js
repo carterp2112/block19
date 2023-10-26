@@ -1,6 +1,6 @@
 
 function getAvgPrice() {
-    let prices = document.querySelectorAll(".price");
+    let prices = document.getElementsByClassName("price");
     let avg = 0;
 
     for(let i = 0; i < prices.length; i++) {
@@ -29,8 +29,9 @@ function displayFreelancers() {
 
     function displayPerson(freelancers) {
         const list = document.createElement("ul");
-        list.innerHTML = `<li>${freelancers[1].name}</li>\n<li>${freelancers[1].job}</li>\n<li>$${freelancers[1].cost}</li>`;
+        list.innerHTML = `<li>${freelancers[1].name}</li>\n<li>${freelancers[1].job}</li>\n<li class="price">$${freelancers[1].cost}</li>`;
         document.getElementById("listings").appendChild(list);
     }
-    setInterval(displayPerson(freelancers), 1000);
+    displayPerson(freelancers);
+    getAvgPrice()
 }
