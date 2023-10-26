@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="panel">
+        <div class="header">
+            <h1>Freelancer Forum</h1>
+            <h3 id="average-price"></h3>
+            <h1>Available Freelancers</h1><hr style="width: 50%;">
+        </div>
+        <div class="labels">
+            <ul>
+                <li><strong>Name</strong></li>
+                <li><strong>Occupation</strong></li>
+                <li><strong>Starting Price</strong></li>
+            </ul>
+        </div>
+        <div class="listings">
+            <ul>
+                <li>John</li>
+                <li>Teacher</li>
+                <li class="price">$30</li>
+            </ul>
+            <ul>
+                <li>James</li>
+                <li>Writer</li>
+                <li class="price">$20</li>
+            </ul>
+            <ul>
+                <li>Joe</li>
+                <li>Programmer</li>
+                <li class="price">$50</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        getAvgPrice()
+    </script>
+</body>
+</html>

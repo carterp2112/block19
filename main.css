@@ -1,0 +1,18 @@
+.panel {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-style: solid;
+    width: 50%
+}
+
+.labels li{
+    list-style-type: none;
+    padding: 15PX;
+    display: inline-block;
+}
+
+.listings li{
+    list-style-type: none;
+    padding-right: 70PX;
+    display: inline-block;
+}
