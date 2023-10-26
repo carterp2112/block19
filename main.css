@@ -11,7 +11,7 @@
     display: inline-block;
 }
 
-.listings li{
+#listings li{
     list-style-type: none;
     padding-right: 70PX;
     display: inline-block;
